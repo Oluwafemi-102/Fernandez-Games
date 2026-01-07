@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors 2.0</title>
+  <link href="img/download.jpeg" rel="icon" type="image/16x16-icon" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/adc6dbe308.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div id="start">
+    <img src="img/b680a062246147.5a8a773c6932d.gif" alt="" id="start-img">
+    <div id="start-button">
+      <p>Start</p>
+    </div>
+    <p class="start-text">A classic game (Rock Paper Scissors): Choose one of the three choices and see if you can beat
+      the computer.
+    <p class="start-text">Will you Win? The chance is random!</p>
+    </p>
+  </div>
+
+  <div id="game-level">
+    <div id="select-game-level-1">
+      <div class="level-img-change">
+        <div class="game-level-arrows" id="back-1">
+          <p><</p>
+        </div>
+        <div class="select-game-level-img" id="select-game-level-img-1">
+          <p>VS</p>
+        </div>
+        <div class="game-level-arrows" id="next-1">
+          <p>></p>
+        </div>
+      </div>
+      <div class="game-options">
+        <div class="game-options-locked" id="main-menu-1">
+          <i class="fa-solid fa-bars"></i>
+          <p> Main Menu</p>
+        </div>
+        <div id="game-level-start-1">
+          <p>Start Game</p>
+        </div>
+        <div class="game-options-locked" id="settings-1">
+          <i class="fa-solid fa-gear"></i>
+          <p>Settings</p>
+        </div>
+        <div class="game-options-locked" id="sounds-1">
+          <i class="fa-solid fa-volume-high"></i>
+          <p>Sounds</p>
+        </div>
+        <div class="game-options-locked" id="help-1">
+          <i class="fa-solid fa-question"></i>
+          <p>help</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="select-game-level-2">
+      <div class="level-img-change">
+        <div class="game-level-arrows" id="back-2">
+          <p><</p>
+        </div>
+        <div class="select-game-level-img" id="select-game-level-img-2">
+          <div id="locked">
+            <i class="fa-solid fa-lock"></i>
+            <p>LOCKED</p>
+          </div>
+          <p>VS</p>
+        </div>
+        <div class="game-level-arrows" id="next-2">
+          <p>></p>
+        </div>
+      </div>
+      <div class="game-options">
+        <div class="game-options-locked" id="main-menu-2">
+          <i class="fa-solid fa-bars"></i>
+          <p>Main Menu</p>
+        </div>
+        <div id="game-level-start-2">
+          <p>Start Game</p>
+        </div>
+        <div class="game-options-locked" id="settings-2">
+          <i class="fa-solid fa-gear"></i>
+          <p>Settings</p>
+        </div>
+        <div class="game-options-locked" id="sounds-2">
+          <i class="fa-solid fa-volume-high"></i>
+          <p>Sounds</p>
+        </div>
+        <div class="game-options-locked" id="help-2">
+          <i class="fa-solid fa-question"></i>
+          <p>help</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pause-options">
+      <div class="game-options-locked" id="pause-level-restart-1">
+        <i class="fa-solid fa-rotate-right"></i>
+        <p>Restart</p>
+      </div>
+      <div class="game-options-locked" id="pause-level-continue-1">
+        <p>Continue</p>
+      </div>
+      <div class="game-options-locked" id="pause-menu-1">
+        <p>Menu</p>
+      </div>
+      <div class="game-options-locked" id="pause-main-menu-1">
+        <i class="fa-solid fa-bars"></i>
+        <p>Main Menu</p>
+      </div>
+      <div class="game-options-locked" id="pause-settings-1">
+        <i class="fa-solid fa-gear"></i>
+        <p>Settings</p>
+      </div>
+      <div class="game-options-locked" id="pause-help-1">
+        <i class="fa-solid fa-question"></i>
+        <p>help</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="game-page">
+    <div id="inner-gamepage">
+      <div id="header">
+        <h1>ROCK PAPER SCISSORS💯</h1>
+        <div id="pause"><i class="fa-solid fa-pause"></i></div>
+      </div>
+      <div id="choose">
+        <div class="player">
+          <div class="emoji-box" id="rock-hide-1">👊</div>
+          <div class="emoji-box" id="paper-hide-1">🖐</div>
+          <div class="emoji-box" id="scissors-hide-1">✌</div>
+          <div class="bot-profile" id="player"></div>
+          <input type="text" placeholder="PLAYER 1" class="you">
+          <div id="player-moves">
+            <button class="player-move" id="rock-1">👊</button>
+            <button class="player-move" id="paper-1">🖐</button>
+            <button class="player-move" id="scissors-1">✌</button>
+          </div>
+        </div>
+
+        <div id="all">
+          <div id="all-vs">
+            <div id="vs-line">
+
+            </div>
+            <div id="vs-sign">
+
+            </div>
+          </div>
+          <p>FIRST TO <span>20</span></p>
+        </div>
+
+        <div class="player">
+          <div class="emoji-box" id="rock-hide-2">👊</div>
+          <div class="emoji-box" id="paper-hide-2">🖐</div>
+          <div class="emoji-box" id="scissors-hide-2">✌</div>
+          <div class="bot-profile" id="computer"></div>
+          <input type="text" placeholder="COMPUTER" class="you">
+          <button class="player-move"><span class="move-hides" id="rand-rock-hide">👊</span><span class="move-hides"
+              id="rand-paper-hide">🖐</span><span class="move-hides" id="rand-scissors-hide">✌</span><span
+              id="rand-hide">?</span></button>
+        </div>
+      </div>
+      <div id="Score">
+        <p>Score: <span class="get" id="win">0</span></p>
+        <!-- <p>TIE: <span class="get" id="tie">0</span></p> -->
+        <p>Score: <span class="get" id="lose">0</span></p>
+      </div>
+
+      <div id="buttons">
+        <audio controls id="tie-sound">
+          <source src="sounds/mixkit-martial-arts-fast-punch-2047.wav">
+        </audio>
+        <audio controls id="win-sound">
+          <source src="sounds/mixkit-winning-a-coin-video-game-2069.wav">
+        </audio>
+        <audio controls id="lose-sound">
+          <source src="sounds/mixkit-player-losing-or-failing-2042.wav">
+        </audio>
+
+        <div class="button" id="toggleBtn">
+          <p>Auto Play</p>
+        </div>
+      </div>
+      <div id="main">
+        <div id="win-result">
+          <div class="emoji"><img src="img/real gif 3.gif" alt="happy-image"></div>
+          <p>YOU WIN!!!</p>
+          <div class="result-options">
+            <div class="game-options-locked" id="win-result-main-menu">
+              <i class="fa-solid fa-bars"></i>
+              <p>Menu</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="lose-result">
+          <div class="emoji"><img src="img/real gif 2.gif" alt="sad-face"></div>
+          <p>YOU LOSE!!!</p>
+          <div class="result-options">
+            <div class="game-options-locked" id="lose-result-main-menu">
+              <i class="fa-solid fa-bars"></i>
+              <p>Menu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

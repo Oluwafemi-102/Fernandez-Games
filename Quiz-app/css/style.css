@@ -1,0 +1,893 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#eqinputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#eqinputs p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: cursive;
+  color: aqua;
+}
+
+.inpuall {
+  display: flex;
+  gap: 2vmin;
+  width: 12vmin;
+  border: none;
+}
+
+#eqin {
+  display: none;
+  text-align: center;
+  align-content: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 100%;
+  background-color: rgb(133, 113, 113);
+}
+
+.all {
+  background-color: rgb(173, 171, 171);
+  display: none;
+  align-items: center;
+  height: 10vmin;
+  width: 100%;
+
+}
+
+#enter2 {
+  width: 10vmin;
+  height: 5vmin;
+  padding-top: 10px;
+  padding-left: 8px;
+  font-size: 2vmin;
+  background-color: green;
+}
+
+#eqan {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7vmin;
+}
+
+#abc {
+  background-color: rgb(0, 255, 34);
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 6px;
+  width: 100%;
+  height: 3vmin;
+}
+
+.eq {
+  width: 7vmin;
+  height: 4vmin;
+  padding-left: 10px;
+}
+
+#buttons {
+  display: flex;
+  margin-left: 16vmin;
+  gap: 3vmin;
+}
+
+#calculator {
+  border: 1px solid black;
+  box-shadow: 4px 3px 34px -15px black;
+  background-color: rgb(245, 244, 244);
+  height: 65vmin;
+  width: 42vmin;
+  margin-left: 70vmin;
+  display: none;
+}
+
+#calculator:hover {
+  cursor: pointer;
+}
+
+#head {
+  padding-left: 2vmin;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mini {
+  display: flex;
+}
+
+.min {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vmin;
+  width: 5vmin;
+  font-size: 3vmin;
+}
+
+.min:hover {
+  background-color: rgb(122, 122, 122);
+}
+
+#minX {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vmin;
+  width: 5vmin;
+  font-size: 4vmin;
+}
+
+#minX:hover {
+  background-color: red;
+}
+
+#head-sec {
+  margin-top: 1vmin;
+  display: flex;
+  justify-content: space-between;
+}
+
+#standard {
+  display: flex;
+  gap: 1vmin;
+  font-size: 3vmin;
+}
+
+#ref-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vmin;
+  width: 5vmin;
+  font-size: 3vmin;
+}
+
+#ref-icon:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.output {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#input {
+  padding-top: 1vmin;
+  background-color: rgb(245, 244, 244);
+  height: 8vmin;
+  width: 100%;
+  font-size: 4vmin;
+  font-family: cursive;
+  border: none;
+}
+
+.flex {
+  padding-top: 2px;
+  margin-top: 3px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mk {
+  padding-top: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vmin;
+  width: 6vmin;
+
+}
+
+.mk:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.blur-keys p {
+  color: rgb(180, 180, 180);
+}
+
+#keys {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3px;
+  height: 32vmin;
+  width: 100%;
+  font-size: 2vmin;
+}
+
+.ky {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vmin;
+  width: 10vmin;
+  border-style: none;
+}
+
+.ky:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.num {
+  font-size: 3vmin;
+  font-weight: 500;
+}
+
+#footer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+  width: 100%;
+  height: 40px;
+  padding-top: 2vmin;
+}
+
+#footer:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+
+
+
+.none {
+  display: none;
+}
+
+body {
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 5vmin;
+}
+
+p {
+  font-weight: 600;
+}
+
+#welcomepage {
+  background-color: red;
+  color: white;
+  width: 30%;
+  height: 25vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  margin: 250px auto;
+  font-weight: 600;
+}
+
+#start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+  width: 100%;
+  height: 5vmin;
+  padding-top: 1vmin;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: white;
+  color: black;
+
+  animation: col 2s linear infinite;
+}
+
+#start:hover {
+  transition: 1s ease-in-out;
+  color: black;
+  cursor: pointer;
+}
+
+@keyframes col {
+  0% {
+    border: 2px solid white;
+  }
+
+  25% {
+    border: 2px solid red;
+  }
+
+  50% {
+    border: 2px solid white;
+  }
+
+  70% {
+    border: 2px solid red;
+  }
+
+  100% {
+    border: 2px solid white;
+  }
+}
+
+#timer {
+  font-size: 2rem;
+  color: #ff0000;
+  height: 15vmin;
+  width: 15vmin;
+  border-radius: 8vmin;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50vmin;
+  padding-top: 2vmin;
+
+  font-weight: 600;
+}
+
+#question1 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+.questionHeader {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 9%;
+}
+
+.numQuest {
+  background-color: white;
+  width: 9vmin;
+  height: 6vmin;
+  border-radius: 4vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vmin;
+  margin-top: 4px;
+  margin-left: 2vmin;
+  font-size: 3vmin;
+}
+
+.moneyBox {
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vmin;
+  margin: 0px auto;
+}
+
+
+
+.math1 {
+  background-color: white;
+  width: 90%;
+  height: 30%;
+  margin: 2vmin auto 1vmin;
+  font-size: 4vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4vmin;
+}
+
+.cal {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1px;
+}
+
+.optionBox {
+  height: 50%;
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.option {
+  width: 100%;
+  height: 17%;
+  border: 2px solid white;
+  color: white;
+  border-radius: 20px;
+  padding-left: 2vmin;
+  padding-top: 1vmin;
+  font-size: 3vmin;
+}
+
+.option:hover {
+  background-color: black;
+}
+
+.next {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+.next:hover {
+  background-color: black;
+}
+
+#question2 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+#question3 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+#question4 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+#question5 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+#question6 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+#question7 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+#question8 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+#question9 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+#question10 {
+  background-color: red;
+  width: 35%;
+  height: 80vmin;
+  display: none;
+  margin: 3vmin auto;
+}
+
+#result {
+  background-color: burlywood;
+  width: 22%;
+  height: 50vmin;
+  margin: 10vmin auto;
+  display: none;
+  box-shadow: 2px 0px 10px 5px red;
+}
+
+#innerResult {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+  font-weight: 600;
+  margin: 0px auto;
+}
+
+.emoji {
+  width: 20vmin;
+  height: 20vmin;
+  border: 5pxn solid red;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+
+#result2 {
+  background-color: burlywood;
+  width: 22%;
+  height: 50vmin;
+  margin: 10vmin auto;
+  display: none;
+  box-shadow: 2px 0px 10px 5px red;
+}
+
+#innerResult2 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+  font-weight: 600;
+  margin: 0px auto;
+}
+
+#all {
+  display: none;
+}
+
+.correct {
+  background-color: green;
+  border: 2px solid white;
+  color: #155724;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.incorrect {
+  background-color: red;
+  border: 2px solid #dc3545;
+  color: #721c24;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 480px) {
+  body {
+    background-color: #155724;
+  }
+
+  #welcomepage {
+    padding-top: 3vmin;
+    width: 60%;
+    height: 35vmin;
+    line-height: 20px;
+  }
+
+  #start {
+    font-size: 5vmin;
+    padding-top: 2vmin;
+    margin-bottom: 2vmin;
+  }
+
+  #timer {
+    font-size: 5vmin;
+    margin-left: 10vmin;
+    padding-top: 1vmin;
+  }
+
+  #question1 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question2 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question3 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question4 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question5 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question6 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question7 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question8 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question9 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question10 {
+    width: 55%;
+    height: auto;
+  }
+
+  .numQuest {
+    width: 12vmin;
+    padding-top: 4vmin;
+    font-size: 4vmin;
+  }
+
+  .option {
+    padding-top: 3vmin;
+    font-size: 4vmin;
+  }
+
+  #innerResult {
+    margin: 3vmin auto;
+  }
+
+  #innerResult2 {
+    margin: 3vmin auto;
+  }
+
+  #calculator {
+    margin-left: 25vmin;
+    margin-bottom: 10vmin;
+    height: 89vmin;
+    width: 45vmin;
+  }
+  .mk {
+  padding-top: 5vmin;
+  }
+
+}
+
+#keys {
+  padding: 0vmin;
+}
+
+#eqin {
+  line-height: 5vmin;
+  font-size: 3vmin;
+}
+
+
+
+
+@media (min-width: 481px) {
+  #welcomepage {
+    padding-top: 1vmin;
+    width: 60%;
+    height: 30vmin;
+    line-height: 20px;
+  }
+
+  #start {
+    font-size: 5vmin;
+    padding-top: 1vmin;
+    margin-bottom: 2vmin;
+  }
+
+  #timer {
+    font-size: 5vmin;
+    margin-left: 10vmin;
+    padding-top: 1vmin;
+  }
+
+  #question1 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question2 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question3 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question4 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question5 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question6 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question7 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question8 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question9 {
+    width: 55%;
+    height: auto;
+  }
+
+  #question10 {
+    width: 55%;
+    height: auto;
+  }
+
+  .numQuest {
+    width: 12vmin;
+    padding-top: 2vmin;
+    margin-top: 2vmin;
+    font-size: 4vmin;
+  }
+
+  .option {
+    padding-top: 3vmin;
+    font-size: 4vmin;
+  }
+
+  #innerResult {
+    margin: auto;
+
+  }
+
+  #innerResult2 {
+    margin: 3vmin auto;
+
+  }
+
+  #head {
+    font-size: 3.5vmin;
+  }
+
+  #calculator {
+    margin-left: 25vmin;
+    margin-bottom: 10vmin;
+    height: 89vmin;
+    width: 45vmin;
+  }
+
+  .mk {
+    padding-top: 3vmin;
+  }
+
+  #keys {
+    padding: 0vmin;
+  }
+
+  #eqin {
+    line-height: 5vmin;
+    font-size: 3vmin;
+  }
+}
+
+
+@media (min-width: 721px) {
+  #question1 {
+    width: 45%;
+    height: auto;
+  }
+
+  #question2 {
+    width: 45%;
+    height: auto;
+  }
+
+  #question3 {
+    width: 45%;
+    height: auto;
+  }
+
+  #question4 {
+    width: 45%;
+    height: auto;
+  }
+
+  #question5 {
+    width: 45%;
+    height: auto;
+  }
+
+  #question6 {
+    width: 45%;
+    height: auto;
+  }
+
+  #question7 {
+    width: 45%;
+    height: auto;
+  }
+
+  #question8 {
+    width: 45%;
+    height: auto;
+  }
+
+  #question9 {
+    width: 45%;
+    height: auto;
+  }
+
+  #question10 {
+    width: 45%;
+    height: auto;
+  }
+
+  .numQuest {
+    margin-top: 1vmin;
+  }
+
+  .mk {
+    padding-top: 1.4vmin;
+  }
+
+
+
+  #calculator {
+    margin-left: 25vmin;
+    margin-bottom: 10vmin;
+    height: 73vmin;
+    width: 45vmin;
+  }
+
+  #eqin {
+    line-height: 5vmin;
+    font-size: 3.5vmin;
+  }
+}
